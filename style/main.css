@@ -1,0 +1,83 @@
+/**** GENERAL ****/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    background: linear-gradient(140deg, #5ebbc2, #bdb99f, #8a8a8a, #468085);
+    background-size: 800% 800%;
+
+    -webkit-animation: BackgroundAnimate 13s ease infinite;
+    -moz-animation: BackgroundAnimate 13s ease infinite;
+    animation: BackgroundAnimate 13s ease infinite;
+    position: relative;
+}
+
+@-webkit-keyframes BackgroundAnimate {
+    0%{background-position:0% 5%}
+    50%{background-position:100% 96%}
+    100%{background-position:0% 5%}
+}
+@-moz-keyframes BackgroundAnimate {
+    0%{background-position:0% 5%}
+    50%{background-position:100% 96%}
+    100%{background-position:0% 5%}
+}
+@keyframes BackgroundAnimate {
+    0%{background-position:0% 5%}
+    50%{background-position:100% 96%}
+    100%{background-position:0% 5%}
+}
+
+#texture {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: url("background.png");
+    z-index: 1;
+}
+
+/**** MAIN ****/
+main {
+    width: 1280px;
+    min-height: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    right: 0;
+    z-index: 50;
+}
+
+/**** HEADER ****/
+.header {
+    height: 96px;
+    background-color: #FFFFFF;
+    position: relative;
+}
+.header h1 {
+    height: 48px;
+    line-height: 40px;
+    text-transform: uppercase;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 64px;
+    background-color: #5EBBC2;
+    font-family: "Play", sans-serif;
+    color: #FFFFFF;
+    padding: 0 32px;
+    font-size: 1.1em;
+}
+
+/**** SOUNDS ****/
