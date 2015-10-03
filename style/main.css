@@ -50,7 +50,6 @@ body {
 /**** MAIN ****/
 main {
     width: 1280px;
-    min-height: 100%;
     margin: 0 auto;
     position: absolute;
     top: 48px;
@@ -81,3 +80,12 @@ main {
 }
 
 /**** SOUNDS ****/
+.sounds {
+    height: 480px;
+    width: 100%;
+    background-image: url("sounds.png");
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    flex: row wrap;
+}
