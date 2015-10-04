@@ -81,7 +81,7 @@ function createCanvas ( w, h ) {
                 console.log(audio.duration);
                 $(".time__display").animate({
                     "width" : "1280px"
-                }, audio.duration * 1000);
+                }, audio.duration * 1000, "linear");
             });
         });
 
