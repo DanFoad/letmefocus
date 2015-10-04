@@ -77,6 +77,7 @@ function createCanvas ( w, h ) {
             loadMusic(soundfile);
             audio.play();
             $(".time__display").width(0);
+            console.log(audio.duration);
             $(".time__display").animate({
                 "width" : "1280px"
             }, audio.duration * 1000);
