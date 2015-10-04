@@ -49,16 +49,13 @@ function displayBuffer(buff /* is an AudioBuffer */) {
    context.translate(0,canvasHeight / 2);
    context.globalAlpha = 0.06 ; // lineOpacity ;
    for (var i=0; i<  leftChannel.length; i++) {
-       if (i % 1000 === 0) {
-           console.log(i);
-           // on which line do we get ?
-           var x = Math.floor ( canvasWidth * i / leftChannel.length ) ;
-           var y = leftChannel[i] * canvasHeight / 2 ;
-           context.beginPath();
-           context.moveTo( x  , 0 );
-           context.lineTo( x+1, y );
-           context.stroke();
-       }
+       // on which line do we get ?
+       var x = Math.floor ( canvasWidth * i / leftChannel.length ) ;
+       var y = leftChannel[i] * canvasHeight / 2 ;
+       context.beginPath();
+       context.moveTo( x  , 0 );
+       context.lineTo( x+1, y );
+       context.stroke();
    }
    context.restore();
    console.log('done');
