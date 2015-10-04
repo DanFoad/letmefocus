@@ -7,7 +7,7 @@ var audioContext = new AudioContext();
 var currentBuffer  = null;
 
 // CANVAS
-var canvasWidth = 1024,  canvasHeight = 128 ;
+var canvasWidth = 1280,  canvasHeight = 128 ;
 var newCanvas   = createCanvas (canvasWidth, canvasHeight);
 var context     = null;
 
