@@ -50,6 +50,7 @@ function displayBuffer(buff /* is an AudioBuffer */) {
    context.globalAlpha = 0.06 ; // lineOpacity ;
    for (var i=0; i<  leftChannel.length; i++) {
        if (i % 1000 === 0) {
+           console.log(i);
            // on which line do we get ?
            var x = Math.floor ( canvasWidth * i / leftChannel.length ) ;
            var y = leftChannel[i] * canvasHeight / 2 ;
