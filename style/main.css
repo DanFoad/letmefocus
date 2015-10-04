@@ -109,7 +109,12 @@ main {
 
 /**** TIME ****/
 .time {
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 128px;
+    background-color: rgba(0,0,0,0.8);
 }
 .time__display {
     height: 128px;

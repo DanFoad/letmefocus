@@ -42,7 +42,7 @@ function displayBuffer(buff /* is an AudioBuffer */) {
    var leftChannel = buff.getChannelData(0); // Float32Array describing left channel
    var lineOpacity = canvasWidth / leftChannel.length  ;
    context.save();
-   context.fillStyle = '#222' ;
+   context.fillStyle = 'transparent' ;
    context.fillRect(0,0,canvasWidth,canvasHeight );
    context.strokeStyle = '#121';
    context.globalCompositeOperation = 'lighter';
