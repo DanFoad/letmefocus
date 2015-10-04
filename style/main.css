@@ -9,7 +9,7 @@ html, body {
     width: 100%;
 }
 body {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Roboto", sans-serif;
     background: linear-gradient(140deg, #5ebbc2, #bdb99f, #8a8a8a, #468085);
     background-size: 800% 800%;
 
@@ -88,4 +88,21 @@ main {
     display: -moz-flex;
     display: flex;
     flex: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 128px;
+}
+.sounds__item {
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+.sounds__item img, .sounds__item span {
+    display: block;
+}
+.sounds__item img {
+    width: 128px;
+    height: 128px;
 }
