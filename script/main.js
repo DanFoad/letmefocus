@@ -48,7 +48,7 @@ function displayBuffer(buff /* is an AudioBuffer */) {
    context.globalCompositeOperation = 'lighter';
    context.translate(0,canvasHeight / 2);
    context.globalAlpha = 0.06 ; // lineOpacity ;
-   for (var i=0; i<  leftChannel.length; i+=1000) {
+   for (var i=0; i<  leftChannel.length; i++) {
        console.log(i);
        // on which line do we get ?
        var x = Math.floor ( canvasWidth * i / leftChannel.length ) ;
