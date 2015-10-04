@@ -17,7 +17,6 @@ function appendCanvas() { document.getElementsByClassName("time")[0].appendChild
 
 // MUSIC LOADER + DECODE
 function loadMusic(url) {
-    console.log(url);
     var req = new XMLHttpRequest();
     req.open( "GET", url, true );
     req.responseType = "arraybuffer";
@@ -50,6 +49,7 @@ function displayBuffer(buff /* is an AudioBuffer */) {
    context.translate(0,canvasHeight / 2);
    context.globalAlpha = 0.06 ; // lineOpacity ;
    for (var i=0; i<  leftChannel.length; i++) {
+       console.log(i);
        // on which line do we get ?
        var x = Math.floor ( canvasWidth * i / leftChannel.length ) ;
        var y = leftChannel[i] * canvasHeight / 2 ;
