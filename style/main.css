@@ -106,3 +106,17 @@ main {
     width: 128px;
     height: 128px;
 }
+
+/**** TIME ****/
+.time {
+    position: relative;
+}
+.time__display {
+    height: 128px;
+    width: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+}

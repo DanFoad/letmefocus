@@ -73,7 +73,13 @@ function createCanvas ( w, h ) {
 
         $(".sounds__item").on("click", function() {
             var soundfile = "sounds/" + $(this).data("sound") + ".mp3";
+            var audio = new Audio(soundfile);
             loadMusic(soundfile);
+            audio.play();
+            $(".time__display").width(0);
+            $(".time__display").animate({
+                "width" : "1280px"
+            }, audio.duration * 1000);
         });
 
     });
